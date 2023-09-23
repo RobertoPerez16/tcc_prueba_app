@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateOrDelete">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="731dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edite o elimine un cliente"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            android:layout_margin="15dp"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <EditText
+            android:id="@+id/txtBusqueda"
+            android:layout_width="362dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="Busqueda por Número de identificación"
+            android:inputType="text"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+
+        <Button
+            android:id="@+id/buscarCliente"
+            android:layout_width="367dp"
+            android:layout_height="65dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Buscar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="171dp" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="364dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="text"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+        <Spinner
+            android:id="@+id/tipoIdentificacion"
+            android:layout_width="361dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"></Spinner>
+
+
+        <RadioGroup
+            android:layout_width="341dp"
+            android:layout_height="149dp"
+            android:layout_margin="15dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="423dp">
+
+            <RadioButton
+                android:id="@+id/radio_masculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Másculino" />
+
+            <RadioButton
+                android:id="@+id/radio_femenino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/radio_otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnEditarCliente"
+            android:layout_width="366dp"
+            android:layout_height="62dp"
+            android:layout_margin="15dp"
+            android:text="Actualizar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="227dp"
+            tools:layout_editor_absoluteY="637dp" />
+
+        <Button
+            android:id="@+id/btnEliminarCliente"
+            android:layout_width="363dp"
+            android:layout_height="62dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="Eliminar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="637dp"
+
+            />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

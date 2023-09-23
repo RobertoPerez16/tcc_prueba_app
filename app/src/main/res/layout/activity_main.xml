@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="735dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-5dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crea un cliente"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            android:layout_margin="15dp"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <EditText
+            android:id="@+id/numeroIdentificacion"
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:hint="Número de identificación"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="50p"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <Spinner
+            android:id="@+id/tipoidentificacion"
+            android:layout_width="361dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"></Spinner>
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="355dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:hint="Nombre"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="104dp" />
+
+        <RadioGroup
+            android:id="@+id/genero"
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:layout_margin="15dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="167dp">
+
+            <RadioButton
+                android:id="@+id/masculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/femenino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro" />
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Agregar cliente"
+            android:layout_marginHorizontal="60dp"
+
+        />
+
+        <Button
+            android:id="@+id/ver_listado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver listado"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="60dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+        />
+
+        <Button
+            android:id="@+id/editar_o_eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="60dp"
+            android:text="Editar o Eliminar"
+            android:backgroundTint="@color/design_default_color_error"
+        />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

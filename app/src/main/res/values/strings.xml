@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">prueba_app</string>
+    <string-array name="opciones">
+        <item>CC</item>
+        <item>CE</item>
+        <item>TI</item>
+        <item>NIT</item>
+        <item>RUC</item>
+    </string-array>
+
+    <string-array name="opciones_editar">
+        <item>CC</item>
+        <item>CE</item>
+        <item>TI</item>
+        <item>NIT</item>
+        <item>RUC</item>
+    </string-array>
+</resources>
